@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/connexion.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form_wrapper">
+        <div class="form_container">
+          <div class="title_container">
+            <h2>CONNEXION</h2>
+          </div>
+          <div class="row clearfix">ù
+            <div class="">
+              <form>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                  <input type="email" name="email" placeholder="Email" required />
+                </div>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                  <input type="password" name="password" placeholder="Password" required />
+                </div>
+                
+                <input class="button" type="submit" value="Connexion" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="credit">Vous n'avez pas de compte, <a href="connexion" target="_blank">clicker ici</a></p>
+</body>
+</html>

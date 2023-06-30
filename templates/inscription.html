@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/inscription.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form_wrapper">
+        <div class="form_container">
+          <div class="title_container">
+            <h2>INSCRIPTION</h2>
+          </div>
+          <div class="row clearfix">
+            <div class="">
+              <form>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                  <input type="email" name="email" placeholder="Email" required />
+                </div>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                    <input type="text" name="phone" placeholder="07 899 504 93" required />
+                  </div>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                  <input type="password" name="password" placeholder="Password" required />
+                </div>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                  <input type="password" name="password" placeholder="Re-type Password" required />
+                </div>
+                <div class="row clearfix">
+                  <div class="col_half">
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                      <input type="text" name="name" placeholder="Prénoms" />
+                    </div>
+                  </div>
+                  <div class="col_half">
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                      <input type="text" name="name" placeholder="Nom de famille" required />
+                    </div>
+                  </div>
+                </div>
+                    
+                    <div class="input_field radio_option">
+                        <input type="radio" name="radiogroup1" id="rd1">
+                        <label for="rd1">Male</label>
+                        <input type="radio" name="radiogroup1" id="rd2">
+                        <label for="rd2">Female</label>
+                    </div>
+                  <div class="input_field checkbox_option">
+                      <input type="checkbox" id="cb1">
+                      <label for="cb1">Je suis d'accord avec les termes et les conditions</label>
+                  </div>
+                <input class="button" type="submit" value="Valider" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="credit">Vous avez déjà un compte, <a href="connexion" target="_blank">clicker ici</a></p>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/accueil.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--===========Nav Bar=================-->
+<section class="nav-bar">
+    <div class="logo">Go Trans</div>
+    <ul class="menu">
+        <li><a href="#">acceuil</a></li>
+        <li><a href="#">compagnies</a></li>
+        <li><a href="#">historiques</a></li>
+        <li><a href="{{ url_for('a_propos') }}">à propos</a></li>
+        <li><a href="{{ url_for('inscription') }}">incription</a></li>
+        <li><a href="{{ url_for('index') }}">connexion</a></li>
+    </ul>
+    </div>
+
+</section>
+<!--===============Banner================-->
+<section class="banner">
+    <div class="banner-text-item">
+        <div class="banner-heading">
+            <h1>Reserver votre prochaine destination !</h1>
+        </div>
+        <form class="form">
+            
+            <input type="text" list="mylist" placeholder="Ville de départ">
+            <datalist id="mylist">
+              <option>Bouaké</option>
+              <option>Soubré</option>
+              <option>Sans-pédro</option>
+              <option>Yamoussoukro</option>
+              <option>Korogho</option>
+              <option>Man</option>
+              <option>Odienne</option>
+              <option>Aboisso</option>
+              <option>Bondoukou</option>
+              <option>Gagnoa</option>
+              <option>Bouaflé</option>
+              <option>Béoumi</option>
+              <option>Katiola</option>
+            </datalist>
+            <input type="text" list="mylist2" placeholder="Ville d'arrivée">
+            <datalist id="mylist2">
+              <option>Bouaké</option>
+              <option>Soubré</option>
+              <option>Sans-pédro</option>
+              <option>Yamoussoukro</option>
+              <option>Korogho</option>
+              <option>Man</option>
+              <option>Odienne</option>
+              <option>Aboisso</option>
+              <option>Bondoukou</option>
+              <option>Gagnoa</option>
+              <option>Bouaflé</option>
+              <option>Béoumi</option>
+              <option>Katiola</option>
+
+            </datalist>
+            <input type="date" class="date">
+            <a href="#" class="book">Réserver</a>
+          </form>
+    </div>
+</section>
+
+<!--=========Services===============-->
+<section class="services">
+    <div class="service-item">
+        <!--https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293634/tour-guide_onzla9.png-->
+        <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293738/reliability_jbpn4g.png">
+        <h2>Sécuriter assurer durant tout voyage</h2>
+    </div>
+    <div class="service-item">
+        <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293634/tour-guide_onzla9.png">
+        <h2>Des conducteurs profesionnels</h2>
+    </div>
+    <div class="service-item">
+        <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293635/experience_a3fduk.png">
+        <h2>L'historique des voyages enregistré</h2>
+    </div>
+    <div class="service-item">
+        <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293634/feedback_s8z7d9.png">
+        <h2>Voyagez en toute confiance</h2>
+    </div>
+</section>
+<!--==============Places===================-->
+<section class="places">
+    <div class="places-text">
+        <small>FORFAITS DE VISITES</small>
+        <h2>Lieux Favoris</h2>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src="{{ url_for('static', filename='images/bouaké.jpeg') }}" alt="Image">
+
+                    <!-- <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293736/james-wheeler_xqmq2y.jpg"> -->
+                </div>
+            </div>
+
+            <div class="text">
+                <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+                <h2>Belle visite dans savane</h2>
+                <p class="cost">10.000fcfa / Par Personne</p>
+                <div class="card-box">
+                    <p class="time">&#128339; 5 Heures</p>
+                    <p class="location"> Abibjan - Bouaké</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src="image/Man.jpeg">
+                    <img src="{{ url_for('static', filename='images/Man.jpeg') }}" alt="Image">
+
+                    <!-- <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293755/paris_uj8wum.jpg"> -->
+                </div>
+            </div>
+
+            <div class="text">
+                <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+                <h2>Aventurez-vous dans les montagne</h2>
+                <p class="cost">13.000fcfa / Par Personne</p>
+                <div class="card-box">
+                    <p class="time">&#128339; 10 Heures</p>
+                    <p class="location"> Abidjan - Man</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src="image/san-pedro1.jpeg">
+                    <img src="{{ url_for('static', filename='images/san-pedro1.jpeg') }}" alt="Image">
+
+                    <!-- <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293955/monaco_usu7xb.jpg"> -->
+                </div>
+            </div>
+
+            <div class="text">
+                <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+                <h2>Visitez les belles côtes</h2>
+                <p class="cost">7.000fcfa / Par Personne</p>
+                <div class="card-box">
+                    <p class="time">&#128339; 5 Heures</p>
+                    <p class="location"> Abidjan - San-Pédro</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <!-- <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293874/switzerland_tubxcm.jpg"> -->
+                    <img src="image/danseboloye.jpeg">
+                    <img src="{{ url_for('static', filename='images/danseboloye.jpeg') }}" alt="Image">
+                </div>
+            </div>
+
+            <div class="text">
+                <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+                <h2>Allez dans le pur Poro</h2>
+                <p class="cost">14.000 / Par Personne</p>
+                <div class="card-box">
+                    <p class="time">&#128339; 11 Heures</p>
+                    <p class="location"> Abidjan - Korogho</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src="image/Bondoukou.jpeg">
+                    <img src="{{ url_for('static', filename='images/Bondoukou.jpeg') }}" alt="Image">
+                    <!-- <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293673/korea_bxrcj5.jpg"> -->
+                </div>
+            </div>
+
+            <div class="text">
+                <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+                <h2>Visitez les milles mosquée</h2>
+                <p class="cost">8.000fcfa / Par Personne</p>
+                <div class="card-box">
+                    <p class="time">&#128339; 5 Heures</p>
+                    <p class="location"> Abidjan - Bondoukou</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src="image/yakro.jpeg">
+                    <img src="{{ url_for('static', filename='images/yakro.jpeg') }}" alt="Image">
+                    <!-- <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293673/night-4336403_1920_demehp.jpg"> -->
+                </div>
+            </div>
+
+            <div class="text">
+                <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+                <h2>Les lacs aux Caîmants</h2>
+                <p class="cost">5.000fcfa / Par Personne</p>
+                <div class="card-box">
+                    <p class="time">&#128339; 2 Heures</p>
+                    <p class="location"><!--&#9992;--> Abidjan - Yamoussoukro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+        <!--===========About Us===============-->
+        <section class="about">
+            <div class="about-img">
+                <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293719/outdoor_tjjhxk.jpg">
+            </div>
+            <div class="about-text">
+                <small>AU SUJET DE NOTRE COMPAGNIE</small>
+                <h2>Nous sommes la société de transport Go Trans</h2>
+                <p>Nous sommes spécialisé dans la reservation des 
+                    tickets en ligne , et ausso nous vous donnons la posibilité
+                    de pouvoir aussi reseervé votre place le cas etant en circulation ,
+                    nous enregistrons tous vos voyage pour plus de sécuté et en 
+                    cas de perte de bien ou espèces , ect .
+
+                </p>
+
+                <label><input type="checkbox" checked>Fiabilité et confiance</label>
+                <label><input type="checkbox" checked>L'un des mellieur</label>
+                <label><input type="checkbox" checked>Le profesionnaliste et la qualité</label>
+                <label><input type="checkbox" checked>Au prêt de vous et avec vous</label>
+                <a href="#">À Propos</a>
+            </div>
+        </section>
+
+        <!--===========Footer=================-->
+        <div class="footer">
+            <div class="links">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li>Accueil</li>
+                    <li>Compagnies</li>
+                    <li>Historique</li>
+                    <li>A propos</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Nouvelles fonctionnalitées</h3>
+                <ul>
+                    <li>Réservation aller-retour</li>
+                    <li>Réservation pour plus personnes</li>
+                    <li>changer de compagnie</li>
+                    <li>annuler le voyages</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Soutien</h3>
+                <ul>
+                    <li>Questions fréquemment posées</li>
+                    <li>Signaler un problème de paiement</li>
+                    <li>termes et conditions</li>
+                    <li>politique de confidentialité</li>
+                </ul>
+            </div>
+        </div>
+
+</body>
+</html>
